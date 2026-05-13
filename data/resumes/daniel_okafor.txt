@@ -1,0 +1,29 @@
+Name: Daniel Okafor
+Email: daniel.okafor@example.com
+Location: Lagos, Nigeria (remote)
+
+Summary
+Backend engineer with 5 years of Python experience.  Strong on FastAPI, Postgres, Docker, and Kubernetes.  AWS Solutions Architect Associate certified.
+
+Experience
+
+Senior Backend Engineer  -  Paystream (2022 - Present, 3 years)
+- Designed and built FastAPI microservices powering payments for 1.5M users.
+- Owns Postgres schema design and migrations; partitioned the transactions table.
+- Productionised Kafka event pipelines for fraud detection.
+- Runs on-call rotation; reduced p99 latency by 35% with caching + Redis.
+- Mentors 3 mid-level engineers.
+
+Software Engineer  -  Flutterwave (2020 - 2022, 2 years)
+- Built Django services for KYC / onboarding.
+- Migrated workloads from EC2 to EKS; introduced Terraform modules.
+
+Education
+B.Eng. Computer Engineering, University of Lagos (2019)
+
+Certifications
+- AWS Certified Solutions Architect - Associate (2022)
+
+Skills
+Python, FastAPI, Django, Postgres, Redis, Kafka, Docker, Kubernetes,
+AWS (EKS, S3, Lambda, RDS), Terraform, REST, gRPC, observability (Datadog, Grafana).

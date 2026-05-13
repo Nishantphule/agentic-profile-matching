@@ -1,0 +1,24 @@
+Name: Frank Huang
+Email: frank.huang@example.com
+Location: Singapore
+
+Summary
+Backend engineer with 8 years of experience in Java and a recent 2-year stint with Python. Strong on distributed systems and Kafka. Limited cloud experience.
+
+Experience
+
+Senior Backend Engineer  -  GreenHive (2020 - Present, 5 years)
+- Built event-driven Java microservices on Spring Boot; integrated Kafka for inter-service comms.
+- Recently led a small Python (FastAPI) project for an internal analytics dashboard.
+- Authored an in-house RPC framework based on gRPC.
+
+Backend Engineer  -  Trustly (2017 - 2020, 3 years)
+- Wrote Java services for a payments platform.
+- Owned Postgres schema design and read-replica strategy.
+
+Education
+B.Sc. Computer Science, NUS Singapore (2017)
+
+Skills
+Java, Spring, gRPC, Kafka, Postgres, MySQL, Redis, Python, FastAPI,
+Docker, REST, microservices.

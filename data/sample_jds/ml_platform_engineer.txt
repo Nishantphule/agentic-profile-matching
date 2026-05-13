@@ -1,0 +1,25 @@
+Machine Learning Platform Engineer
+
+About the role
+Join our ML Platform team to build the infrastructure that powers all production ML at the company - feature stores, training pipelines, model registries, and online inference services. This is a senior IC role with significant scope and autonomy.
+
+Responsibilities
+- Build and operate large-scale data and ML pipelines on AWS.
+- Own the model deployment story: CI/CD for models, A/B testing, monitoring.
+- Partner with applied ML teams to productionise PyTorch / scikit-learn models.
+- Lead architecture for the next-generation feature store.
+
+Required qualifications
+- 4+ years of backend / platform engineering experience.
+- Strong Python skills.
+- Hands-on AWS experience (S3, EKS, SageMaker, Lambda).
+- Proven track record with Docker and Kubernetes in production.
+- Experience with Airflow, Spark, or a comparable orchestration / data-processing stack.
+- Experience deploying ML models to production.
+
+Preferred / nice to have
+- Experience with LangChain, RAG, or LLM inference at scale.
+- Familiarity with Terraform and infrastructure-as-code.
+- Kafka or other streaming experience.
+- Snowflake or BigQuery experience.
+- Open-source contributions to ML / data tooling.

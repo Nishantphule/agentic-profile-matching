@@ -1,0 +1,25 @@
+# =====================================================================
+# Streamlit configuration for the Resume Matching Agent
+# =====================================================================
+#
+# We disable the local-sources file watcher because it deep-introspects
+# every imported Python module to decide whether it should hot-reload.
+# That triggers `transformers`' lazy attribute loader, which then tries
+# to import vision-only sub-modules (SAM, YOLOS, Qwen2-VL, ...) that
+# require `torchvision`.  Since this is a CPU-only app that doesn't use
+# torchvision, those imports flood the terminal with harmless but very
+# noisy ModuleNotFoundError stack traces.
+#
+# Trade-off: you'll need to manually re-run `streamlit run app.py` after
+# editing Python files.  If you prefer auto-reload, change this to
+# "poll" or "watchdog" and live with the warnings.
+
+[server]
+fileWatcherType = "none"
+headless = false
+
+[browser]
+gatherUsageStats = false
+
+[logger]
+level = "info"

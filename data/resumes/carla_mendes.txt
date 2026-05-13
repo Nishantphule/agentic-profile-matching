@@ -1,0 +1,26 @@
+Name: Carla Mendes
+Email: carla.mendes@example.com
+Location: Lisbon, Portugal (remote-friendly)
+
+Summary
+Senior front-end engineer with 6 years of professional experience, including 4 years specialising in TypeScript-first React applications, performance, and accessibility.
+
+Experience
+
+Senior Front-End Engineer  -  NimbusPay (2020 - Present, 5 years)
+- Lead front-end for a fintech web application; React + TypeScript + Vite.
+- Migrated state management from Redux to Zustand; reduced bundle size by 22%.
+- Owns the design system, built with Tailwind CSS and Storybook.
+- Wrote Cypress E2E test suite covering critical user journeys.
+- Mentors 2 mid-level engineers and 1 intern.
+
+Software Engineer  -  Codacy (2019 - 2020, 1 year)
+- Built React features for the dashboard; introduced React Query patterns.
+
+Education
+M.Sc. Software Engineering, University of Lisbon (2019)
+
+Skills
+React, TypeScript, JavaScript, Zustand, Redux, Vite, Webpack, Tailwind CSS,
+Cypress, Jest, React Testing Library, accessibility (WCAG), GraphQL, REST,
+Node.js, AWS (S3 + CloudFront), Docker.

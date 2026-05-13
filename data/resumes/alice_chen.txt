@@ -1,0 +1,27 @@
+Name: Alice Chen
+Email: alice.chen@example.com
+Location: San Francisco, CA
+
+Summary
+Senior front-end engineer with 7 years of experience building production React applications at scale. Strong TypeScript and design-systems background. Mentored 4 engineers across two companies.
+
+Experience
+
+Staff Front-End Engineer  -  AcmeCloud (2021 - Present, 4 years)
+- Led re-architecture of the customer dashboard to React 18 + TypeScript + Next.js, reducing TTI by 38%.
+- Owned the company-wide design system (50+ components) built on Tailwind CSS and Radix.
+- Drove adoption of Redux Toolkit and React Query across 6 product teams.
+- Mentored 4 mid-level engineers, ran weekly code-review sessions.
+- Deployed Next.js applications to AWS (S3 + CloudFront + Lambda@Edge) via CI/CD pipelines.
+
+Senior UI Engineer  -  Brightside Software (2018 - 2021, 3 years)
+- Built React applications for healthcare providers; ensured WCAG 2.1 AA accessibility.
+- Introduced Cypress E2E testing; coverage went from 12% to 78%.
+- Open-source maintainer of a React table library (1.2k stars).
+
+Education
+B.S. Computer Science, UC Berkeley (2017)
+
+Skills
+React, TypeScript, JavaScript, Redux, Next.js, Tailwind CSS, Jest, React Testing Library, Cypress,
+GraphQL, REST, Node.js, AWS, CI/CD, GitHub Actions, accessibility, performance optimisation.

@@ -1,0 +1,24 @@
+Name: Brian Davies
+Email: brian.davies@example.com
+Location: Austin, TX
+
+Summary
+Full-stack engineer with 3 years of experience. Most recent role focused on React and Node.js; comfortable with TypeScript but stronger on JavaScript.
+
+Experience
+
+Software Engineer  -  LedgerWise (2022 - Present, 3 years)
+- Built customer-facing dashboards in React and Redux; migrated about 40% of the codebase to TypeScript.
+- Wrote Node.js / Express services for internal tooling.
+- Set up GitHub Actions CI for the front-end repos.
+
+Junior Software Engineer  -  Bytefoundry (2021 - 2022, 1 year)
+- Shipped marketing pages in Next.js and Tailwind CSS.
+- Wrote unit tests with Jest; some React Testing Library experience.
+
+Education
+B.S. Computer Engineering, UT Austin (2021)
+
+Skills
+JavaScript, React, Redux, Node.js, Express, TypeScript (intermediate),
+Next.js, Tailwind CSS, Jest, GitHub Actions, Postgres, REST, GraphQL.

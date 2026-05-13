@@ -1,0 +1,23 @@
+Name: Gloria Martins
+Email: gloria.martins@example.com
+Location: São Paulo, Brazil
+
+Summary
+Front-end engineer with 4 years of experience.  Strong on Vue and Nuxt; recently shipped React features but Vue remains primary stack.
+
+Experience
+
+Senior Front-End Engineer  -  Conta Azul (2022 - Present, 3 years)
+- Lead front-end developer for the SMB accounting product (Vue 3 + Pinia + Nuxt).
+- Built a shared component library used across 4 teams.
+- Added ~12% of total React code to the codebase during a multi-app integration.
+
+Front-End Engineer  -  Loft (2021 - 2022, 1 year)
+- React + TypeScript work on the property search experience.
+
+Education
+B.Sc. Computer Science, USP (2021)
+
+Skills
+JavaScript, TypeScript, Vue, Nuxt, Pinia, React, Tailwind CSS, Jest,
+Cypress, REST, GraphQL.

@@ -1,0 +1,25 @@
+Senior React Engineer
+
+About the role
+We are hiring a Senior React Engineer to lead the development of our customer-facing web platform. You will own the front-end architecture, mentor mid-level engineers, and partner with product and design to ship high-impact features.
+
+Responsibilities
+- Architect and implement complex UIs in React and TypeScript.
+- Drive front-end performance, accessibility, and testing standards.
+- Collaborate with backend teams on REST and GraphQL APIs.
+- Mentor 2-3 mid-level engineers and run code reviews.
+- Lead front-end technical planning and roadmaps.
+
+Required qualifications
+- 5+ years of professional experience building production React applications.
+- Strong TypeScript skills.
+- Deep knowledge of state management (Redux, Zustand, or similar).
+- Experience with modern build tooling (Vite, Webpack, Next.js).
+- Solid grasp of CSS, accessibility, and responsive design.
+- Experience writing unit and integration tests (Jest, React Testing Library, Cypress).
+
+Preferred / nice to have
+- AWS or GCP experience deploying static / SSR sites.
+- Experience with Tailwind CSS.
+- Familiarity with Node.js and BFF patterns.
+- Open-source contributions.

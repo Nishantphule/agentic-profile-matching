@@ -1,0 +1,27 @@
+Name: Elena Rossi
+Email: elena.rossi@example.com
+Location: Berlin, Germany
+
+Summary
+ML Platform engineer with 6 years of experience designing and operating large-scale training and inference systems on AWS. Recently focused on LangChain / RAG infrastructure.
+
+Experience
+
+Staff ML Platform Engineer  -  DataForge (2021 - Present, 4 years)
+- Built the feature store used by 8 applied ML teams (Spark + Airflow + Redis).
+- Owns the model deployment platform: containerised PyTorch + TensorFlow models running on EKS.
+- Designed a multi-tenant LangChain serving layer with FAISS-based RAG, handling 25 QPS.
+- Set up SageMaker pipelines for offline evaluation and A/B testing.
+- Mentored 3 engineers; on-call lead for 18 months.
+
+ML Engineer  -  AutoLogic (2019 - 2021, 2 years)
+- Productionised computer-vision models on AWS Lambda.
+- Migrated training jobs to Airflow on Kubernetes.
+
+Education
+M.Sc. Machine Learning, ETH Zurich (2019)
+
+Skills
+Python, AWS (EKS, S3, Lambda, SageMaker), Docker, Kubernetes, Terraform,
+Airflow, Spark, Kafka, Snowflake, BigQuery, PyTorch, TensorFlow, scikit-learn,
+LangChain, LangGraph, RAG, FAISS, Pinecone, observability (Datadog).

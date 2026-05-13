@@ -1,0 +1,25 @@
+Senior Backend Engineer (Python)
+
+About the role
+We are looking for a Senior Backend Engineer to build the next generation of our payments platform. You will design distributed systems that handle millions of transactions a day, with strong reliability and security guarantees.
+
+Responsibilities
+- Design and implement scalable microservices in Python (FastAPI / Django).
+- Own service reliability: monitoring, alerting, on-call.
+- Partner with data engineering on event-driven pipelines (Kafka).
+- Mentor mid-level engineers and lead design reviews.
+
+Required qualifications
+- 4+ years of professional Python backend experience.
+- Production experience with FastAPI or Django.
+- Strong SQL skills (Postgres) and experience designing schemas.
+- Experience deploying services on AWS or GCP.
+- Hands-on Docker and Kubernetes experience.
+- Familiar with REST API design and observability.
+
+Preferred / nice to have
+- Kafka or similar streaming systems.
+- Experience with Terraform.
+- AWS certification (Solutions Architect or DevOps Engineer).
+- gRPC and GraphQL experience.
+- Open-source contributions.

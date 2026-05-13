@@ -1,0 +1,164 @@
+# =====================================================================
+# Resume Matching Agent — .gitignore
+# =====================================================================
+# Files and folders that should NEVER be checked into source control.
+# Curated for this project (Python · LangGraph · FAISS · Streamlit).
+# =====================================================================
+
+
+# ---------------------------------------------------------------------
+# 1. Secrets & environment files
+# ---------------------------------------------------------------------
+# `.env` contains the OPENROUTER_API_KEY — must never be committed.
+# `.env.example` is fine to commit (it ships placeholder values).
+.env
+.env.*
+!.env.example
+
+# Streamlit secrets / local config that may include keys
+.streamlit/secrets.toml
+
+
+# ---------------------------------------------------------------------
+# 2. Python bytecode & caches
+# ---------------------------------------------------------------------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Build / packaging artefacts
+build/
+dist/
+*.egg
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+MANIFEST
+
+# Type / lint / test caches
+.mypy_cache/
+.pyre/
+.pytype/
+.ruff_cache/
+.pytest_cache/
+.tox/
+.nox/
+.cache/
+
+# Coverage reports
+.coverage
+.coverage.*
+coverage.xml
+htmlcov/
+nosetests.xml
+
+
+# ---------------------------------------------------------------------
+# 3. Virtual environments
+# ---------------------------------------------------------------------
+.venv/
+venv/
+env/
+ENV/
+.virtualenv/
+.python-version
+Pipfile.lock
+poetry.lock
+uv.lock
+
+
+# ---------------------------------------------------------------------
+# 4. Project-specific generated data
+# ---------------------------------------------------------------------
+# FAISS index + sidecar metadata produced by `python -m vectorstore.ingest`
+.vectorstore/
+*.faiss
+*.meta.json
+
+# Compiled Mermaid diagrams (we ship the .md source; PNG is regenerable)
+diagrams/state_machine.png
+diagrams/*.svg
+
+# Per-thread LangGraph checkpoints (if a file-based checkpointer is added later)
+checkpoints/
+*.sqlite
+*.sqlite3
+*.db
+
+
+# ---------------------------------------------------------------------
+# 5. Logs & runtime output
+# ---------------------------------------------------------------------
+*.log
+logs/
+*.out
+
+
+# ---------------------------------------------------------------------
+# 6. Hugging Face / SentenceTransformers local caches
+# ---------------------------------------------------------------------
+# These are typically under ~/.cache/huggingface, but cover any in-repo
+# overrides via the HF_HOME / TRANSFORMERS_CACHE env vars.
+.cache/
+.hf_cache/
+.huggingface/
+sentence_transformers_cache/
+
+
+# ---------------------------------------------------------------------
+# 7. IDE / editor settings
+# ---------------------------------------------------------------------
+# VS Code / Cursor
+.vscode/
+*.code-workspace
+
+# JetBrains (PyCharm / IntelliJ)
+.idea/
+*.iml
+
+# Sublime
+*.sublime-project
+*.sublime-workspace
+
+# Vim / Emacs
+*.swp
+*.swo
+*~
+.\#*
+\#*\#
+
+
+# ---------------------------------------------------------------------
+# 8. OS-level junk files
+# ---------------------------------------------------------------------
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.fuse_hidden*
+.Trash-*
+
+
+# ---------------------------------------------------------------------
+# 9. Misc safety net
+# ---------------------------------------------------------------------
+*.bak
+*.tmp
+*.swp
+*.orig
+*.rej
+
+# Anything a user might drop in the working tree by accident
+scratch/
+TODO.local.md

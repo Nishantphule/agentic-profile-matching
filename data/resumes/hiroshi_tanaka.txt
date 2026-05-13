@@ -1,0 +1,31 @@
+Name: Hiroshi Tanaka
+Email: hiroshi.tanaka@example.com
+Location: Tokyo, Japan
+
+Summary
+Python backend engineer with 6 years of experience in fintech and ML platform teams.
+Comfortable with FastAPI, Postgres, Kafka, Docker, Kubernetes; recently shipped LLM features using LangChain.
+
+Experience
+
+Senior Backend Engineer  -  Yume Capital (2021 - Present, 4 years)
+- Designed and operates FastAPI microservices handling 500 TPS for trading workflows.
+- Built a feature store on Snowflake + Airflow for the risk team.
+- Shipped a retrieval-augmented generation assistant for traders using LangChain + FAISS.
+- Owns Kubernetes deployment templates (Helm + ArgoCD) and Terraform modules.
+- Holds AWS Certified Solutions Architect - Associate.
+
+Backend Engineer  -  Mercari (2019 - 2021, 2 years)
+- Built Django services for the merchant onboarding flow.
+- Migrated read paths to GraphQL.
+
+Education
+B.Eng. Computer Science, Kyoto University (2019)
+
+Certifications
+- AWS Certified Solutions Architect - Associate (2023)
+
+Skills
+Python, FastAPI, Django, Postgres, Redis, Kafka, Snowflake, Airflow,
+Docker, Kubernetes, AWS (EKS, S3, Lambda), Terraform, REST, GraphQL,
+LangChain, RAG, FAISS, observability (Datadog, Grafana).
