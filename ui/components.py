@@ -31,18 +31,30 @@ def render_sidebar(
     rendered separately by the caller (only after a shortlist exists).
     """
     with st.sidebar:
-        st.title("🧭 Resume Matching")
+        st.markdown(
+            '<h1 style="margin:0; font-size:1.55rem; font-weight:700; color:#f1f5f9; '
+            'letter-spacing:-0.02em;">🧭 Resume Matching</h1>',
+            unsafe_allow_html=True,
+        )
         st.caption("LangGraph · LangChain · OpenRouter · FAISS")
 
         st.divider()
-        st.markdown("##### 📚 Knowledge base")
+        st.markdown(
+            '<p style="margin:0; font-size:0.95rem; font-weight:600; color:#cbd5e1; '
+            'border-left:3px solid #22d3ee; padding-left:0.45rem;">📚 Knowledge base</p>',
+            unsafe_allow_html=True,
+        )
         cols = st.columns([0.55, 0.45])
         cols[0].metric("Resumes", resumes_count)
         with cols[1]:
             if st.button("🔄 Re-ingest", use_container_width=True, key="sb_ingest"):
                 on_ingest()
 
-        st.markdown("##### ⚙️ Search settings")
+        st.markdown(
+            '<p style="margin:0.75rem 0 0.35rem 0; font-size:0.95rem; font-weight:600; color:#cbd5e1; '
+            'border-left:3px solid #22d3ee; padding-left:0.45rem;">⚙️ Search settings</p>',
+            unsafe_allow_html=True,
+        )
         top_k = st.slider(
             "Top-K per round", 3, 30, 10, key="sb_topk",
             help="How many candidates the agent retrieves from FAISS for round 1.",
@@ -67,24 +79,26 @@ AUTHOR_YEAR = 2026
 
 def render_attribution_footer() -> None:
     """Small © attribution block. Safe to call multiple times per render."""
-    st.markdown(
-        f"""
-        <div style="
-            margin-top: 1.25rem;
-            padding-top: 0.6rem;
-            border-top: 1px solid rgba(128,128,128,0.25);
-            text-align: center;
-            font-size: 0.78rem;
-            line-height: 1.4;
-            opacity: 0.85;
-        ">
-            Made with care by<br/>
-            <strong>{AUTHOR_NAME}</strong>™<br/>
-            © {AUTHOR_YEAR} · All rights reserved
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
+        st.markdown(
+            f"""
+            <div style="
+                margin-top: 1.25rem;
+                padding: 0.65rem 0.5rem 0.5rem 0.5rem;
+                border-top: 1px solid rgba(34, 211, 238, 0.28);
+                border-radius: 0 0 8px 8px;
+                text-align: center;
+                font-size: 0.78rem;
+                line-height: 1.45;
+                color: #94a3b8;
+                background: rgba(15, 23, 42, 0.55);
+            ">
+                Made with care by<br/>
+                <strong style="color:#22d3ee;">{AUTHOR_NAME}</strong>™<br/>
+                <span style="color:#64748b;">© {AUTHOR_YEAR} · All rights reserved</span>
+            </div>
+            """,
+            unsafe_allow_html=True,
+        )
 
 
 # ---------------------------------------------------------------------------
@@ -104,7 +118,11 @@ def render_sidebar_quick_actions(
     """
     with st.sidebar:
         st.divider()
-        st.markdown("##### ⚡ Quick actions")
+        st.markdown(
+            '<p style="margin:0.75rem 0 0.35rem 0; font-size:0.95rem; font-weight:600; color:#cbd5e1; '
+            'border-left:3px solid #22d3ee; padding-left:0.45rem;">⚡ Quick actions</p>',
+            unsafe_allow_html=True,
+        )
 
         if not candidates:
             st.caption("Run a match to unlock actions.")
@@ -270,7 +288,11 @@ def render_candidate_table(
         height=height,
         column_config={
             "Score": st.column_config.ProgressColumn(
-                "Score", min_value=0, max_value=100, format="%.1f",
+                "Score",
+                min_value=0,
+                max_value=100,
+                format="%.1f",
+                color="#22d3ee",
             ),
         },
     )
@@ -284,7 +306,11 @@ def render_candidate_details(
     if not candidates:
         return
     if show_header:
-        st.markdown("##### 🧾 Candidate details")
+        st.markdown(
+            '<p style="margin:0 0 0.35rem 0; font-size:1.05rem; font-weight:600; color:#e2e8f0; '
+            'border-left:3px solid #22d3ee; padding-left:0.55rem;">🧾 Candidate details</p>',
+            unsafe_allow_html=True,
+        )
     for i, c in enumerate(candidates, 1):
         with st.expander(f"#{i} · {c.name} — {c.score:.1f}/100"):
             cols = st.columns(2)
@@ -332,7 +358,11 @@ def render_screening_funnel(history_rounds: Iterable[dict]) -> None:
     rows = list(history_rounds)
     if not rows:
         return
-    st.subheader("Multi-round screening")
+    st.markdown(
+        '<p style="margin:0.5rem 0 0.35rem 0; font-size:0.95rem; font-weight:600; color:#cbd5e1; '
+        'border-left:3px solid #22d3ee; padding-left:0.45rem;">Multi-round screening</p>',
+        unsafe_allow_html=True,
+    )
     cols = st.columns(len(rows))
     for col, row in zip(cols, rows):
         col.metric(f"Round {row['round']}", f"{row['count']} candidate(s)", row.get("note", ""))

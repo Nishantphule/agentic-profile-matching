@@ -23,3 +23,15 @@ gatherUsageStats = false
 
 [logger]
 level = "info"
+
+# ---------------------------------------------------------------------
+# Visual theme — slate + cyan (tuned for long recruiting sessions)
+# ---------------------------------------------------------------------
+# Docs: https://docs.streamlit.io/develop/concepts/configuration/theming
+[theme]
+base = "dark"
+primaryColor = "#22d3ee"
+backgroundColor = "#0b1120"
+secondaryBackgroundColor = "#111c2f"
+textColor = "#e8eef7"
+font = "sans serif"
