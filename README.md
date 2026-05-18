@@ -40,7 +40,7 @@ graph TD
     D -->|empty pool| Z([END])
     D --> E[Rank Candidates]
     E --> F[Generate Match Report]
-    F --> G{Human Feedback (interrupt)}
+    F --> G{Human Feedback interrupt}
     G -->|refine| H[Re-rank]
     H --> F
     G -->|approve| I[Final Recommendation]
