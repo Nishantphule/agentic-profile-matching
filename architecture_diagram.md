@@ -70,7 +70,7 @@ graph TD
     D -- empty pool --> Z([END])
     D --> E[rank_candidates]
     E --> F[generate_match_report]
-    F --> G{human_feedback<br/>(interrupt)}
+    F --> G{human_feedback (interrupt)}
     G -- refine --> H[rerank]
     H --> F
     G -- approve --> I[final_recommendation]
