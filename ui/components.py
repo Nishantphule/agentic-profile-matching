@@ -79,26 +79,26 @@ AUTHOR_YEAR = 2026
 
 def render_attribution_footer() -> None:
     """Small © attribution block. Safe to call multiple times per render."""
-        st.markdown(
-            f"""
-            <div style="
-                margin-top: 1.25rem;
-                padding: 0.65rem 0.5rem 0.5rem 0.5rem;
-                border-top: 1px solid rgba(34, 211, 238, 0.28);
-                border-radius: 0 0 8px 8px;
-                text-align: center;
-                font-size: 0.78rem;
-                line-height: 1.45;
-                color: #94a3b8;
-                background: rgba(15, 23, 42, 0.55);
-            ">
-                Made with care by<br/>
-                <strong style="color:#22d3ee;">{AUTHOR_NAME}</strong>™<br/>
-                <span style="color:#64748b;">© {AUTHOR_YEAR} · All rights reserved</span>
-            </div>
-            """,
-            unsafe_allow_html=True,
-        )
+    st.markdown(
+        f"""
+        <div style="
+            margin-top: 1.25rem;
+            padding: 0.65rem 0.5rem 0.5rem 0.5rem;
+            border-top: 1px solid rgba(34, 211, 238, 0.28);
+            border-radius: 0 0 8px 8px;
+            text-align: center;
+            font-size: 0.78rem;
+            line-height: 1.45;
+            color: #94a3b8;
+            background: rgba(15, 23, 42, 0.55);
+        ">
+            Made with care by<br/>
+            <strong style="color:#22d3ee;">{AUTHOR_NAME}</strong>™<br/>
+            <span style="color:#64748b;">© {AUTHOR_YEAR} · All rights reserved</span>
+        </div>
+        """,
+        unsafe_allow_html=True,
+    )
 
 
 # ---------------------------------------------------------------------------
